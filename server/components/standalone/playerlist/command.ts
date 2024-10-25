@@ -17,6 +17,7 @@ export const playerlistCommand = {
         integration_types: [ApplicationIntegrationType.GuildInstall],
         contexts: [InteractionContextType.Guild],
     },
+    guildSpecific: true,
     async execute({ data: interaction, api }) {
         await api.interactions.reply(interaction.id, interaction.token, {
             embeds: [playerlistEmbed()],
