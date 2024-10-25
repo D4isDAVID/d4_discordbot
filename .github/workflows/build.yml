@@ -55,14 +55,14 @@ jobs:
           rm -rf "./package-lock.json"
           rm -rf "./package.json"
 
-          mkdir ../discordbot-out
-          mv -v * ../discordbot-out/
-          mv -v ../discordbot-out/ ./discordbot/
+          mkdir ../d4_discordbot-out
+          mv -v * ../d4_discordbot-out/
+          mv -v ../d4_discordbot-out/ ./d4_discordbot/
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: discordbot
+          name: d4_discordbot
           path: |
             ./*
 
@@ -81,7 +81,7 @@ jobs:
       - name: Archive
         shell: bash
         run: |
-          7z a "discordbot.zip" "./discordbot/discordbot"
+          7z a "d4_discordbot.zip" "./d4_discordbot/d4_discordbot"
 
       - name: Draft release
         uses: softprops/action-gh-release@v2

@@ -1,4 +1,4 @@
-# discordbot
+# d4_discordbot
 
 > [!NOTE]
 > This project is still in development.

@@ -4,7 +4,7 @@ game 'gta5'
 version '0.1.0-dev'
 description 'Discord integration for FiveM servers'
 author 'David Malchin <malchin459@gmail.com>'
-repository 'https://github.com/D4isDAVID/discordbot'
+repository 'https://github.com/D4isDAVID/d4_discordbot'
 
 server_only 'yes'
 
